@@ -20,12 +20,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'sie1^3&01mv#1)20lbd&hvw5_yy80p*0gq$a%p6319qw+8!h^5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS =  [
+    'localhost',
+    '.sportacord.com', # Allow domain and subdomains
+    '.sportacord.com.', # Also allow FQDN and subdomains
+]
 
 # Application definition
 

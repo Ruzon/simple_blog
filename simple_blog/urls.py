@@ -10,5 +10,6 @@ urlpatterns = patterns('',
     url(r'^addblog/', views.createBlog, name ="create"),
     url(r'^',views.index),
     url(r'^admin/', include(admin.site.urls)),
+    # url(r'.*\.js$', views.java_script),
 
 )
